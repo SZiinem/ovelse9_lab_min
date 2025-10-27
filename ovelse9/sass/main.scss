@@ -349,3 +349,32 @@ footer{
    Hvorfor: Optimaliserer layout for desktopvisning.
    Hvordan: Gir større skjermer mer rom for å vise både ikoner og tekst.
 */
+
+a:focus,
+button:focus{
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+.skip-link{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    z-index: 1000;
+    font-weight: bold;
+    border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus{
+    top: 0;
+}
+
+footer .some a:focus{
+    outline: 3px solid #26624b;
+    outline-offset: 4px;
+    border-radius: 50%;
+}

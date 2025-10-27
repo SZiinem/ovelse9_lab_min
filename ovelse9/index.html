@@ -10,6 +10,7 @@
     <title>UU</title> <!-- Sides tittel som vises i nettleserfanen -->
 </head>
 <body>
+    <a href="#main" class="skip-link">Hopp til hovedinnhold</a>
     <div id="container"> <!-- Hovedbeholder for hele innholdet på siden, gjør det enklere å style hele siden -->
         <header>
             <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100" alt="logo-link for rask navigering til hjemmesiden"></a> <!-- Logo-link for rask navigering til hjemmesiden -->
@@ -17,32 +18,32 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Gå til hjem">
                         <i class="fa-solid fa-house"></i> <!-- Hus-ikon for "Hjem" -->
                         <span>Hjem</span> <!-- Tekst for å støtte ikonet; viktig for tilgjengelighet og forståelighet -->
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Gå til handlekurv">
                         <i class="fa-solid fa-basket-shopping"></i> <!-- Handlekurv-ikon -->
                         <span>Handlekurv</span> <!-- Forklarer ikonets funksjon -->
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Gå til favoritter">
                         <i class="fa-solid fa-heart"></i> <!-- Favoritt-ikon -->
                         <span>Favoritter</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Gå til min konto">
                         <i class="fa-solid fa-user"></i> <!-- Bruker-ikon -->
                         <span>Min konto</span> <!-- Indikerer brukerkonto-tilgang -->
                     </a>
                 </li>
             </ul>
         </nav>
-        <main> <!-- Hovedinnholdet på siden for å strukturere og gi bedre lesbarhet for skjermlesere -->
+        <main id="#main"> <!-- Hovedinnholdet på siden for å strukturere og gi bedre lesbarhet for skjermlesere -->
             <section id="welcome-banner">
                 <header>
                     <h1>Overskrift</h1> <!-- Hovedoverskrift for velkomstseksjonen -->
@@ -199,9 +200,21 @@
         <footer>
             <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100?grayscale" alt="logo-link for rask navigering til hjemmesiden"></a> <!-- Gråtonelogo i bunnteksten som også peker til hjemmesiden -->
             <ul class="some"> <!-- Sosiale medier-ikoner -->
-                <li><i class="fa-brands fa-facebook-f"></i></li> <!-- Facebook-ikon -->
-                <li><i class="fa-brands fa-instagram"></i></li> <!-- Instagram-ikon -->
-                <li><i class="fa-brands fa-pinterest-p"></i></li> <!-- Pinterest-ikon -->
+                <li>
+                    <a href="#" aria-label="Besøk oss på Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i> <!-- Facebook-ikon -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Følg oss på instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i> <!-- Instagram-ikon -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Se våre pins på Pinterest">
+                        <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </li> <!-- Pinterest-ikon -->
             </ul>
         </footer>
     </div>  
